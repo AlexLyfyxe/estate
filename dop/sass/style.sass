@@ -1,0 +1,545 @@
+.main
+    position: relative
+    min-height: calc(100vh - 66px)
+    background-image: url('../images/image-main.webp')
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    display: flex
+    align-items: center
+    text-align: center
+    padding-top: 155px
+    padding-bottom: 155px
+    @media (max-width: 1023px)
+        padding-top: 105px
+    @media (max-width: 808px)
+        padding-top: 85px
+        background: linear-gradient(180deg, #C1DBFF 0%, rgba(193, 219, 255, 0.00) 100%)
+    h1
+        color: #45525B
+        font-size: 29px
+        font-weight: 500
+        line-height: 36.8px
+        width: 408px
+        margin-left: auto
+        margin-right: auto
+        margin-top: 20px
+        &:hover
+            text-decoration: underline
+            transition: 2s
+        @media (max-width: 1023px)
+            font-size: 25px
+            line-height: 32.8px
+            margin-bottom: 20px
+        @media (max-width: 558px)
+            font-size: 20px
+            width: 100%
+            line-height: 22.8px
+    a
+        display: block
+        position: absolute
+        bottom: 52px
+        left: 50%
+        width: 64px
+        height: 64px
+        margin-left: -34px
+        border: 2px solid #3A4443
+        border-radius: 100%
+        @media (max-width: 1023px)
+            bottom: 90px
+
+        img
+            margin-top: 20px
+
+.choose
+    padding-top: 114px
+    padding-bottom: 100px
+    @media (max-width: 1023px)
+        padding-top: 90px
+        padding-bottom: 80px
+    @media (max-width: 800px)
+        padding: 50px 0
+    .title__wrap
+        text-align: center
+        .title__desc
+            width: 561px
+            margin-left: auto
+            margin-right: auto
+            @media (max-width: 588px)
+                width: 100%
+    &_block
+        margin-top: 30px
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: center
+        @media (max-width: 1005px)
+            flex-direction: column
+            margin: 50px 0 0 0
+        .choose_bcg
+            width: 480px
+            height: 588px
+            border-radius: 30px
+            background-image: url(../images/IMAGE_choose.webp)
+            background-position: top center
+            @media (max-width: 1143px)
+                width: 380px
+                height: 488px
+            @media (max-width: 1005px)
+                width: 300px
+                height: 358px
+                background-position: center
+            @media (max-width: 800px)
+                height: 0px
+        .choose_culum_blocks
+            margin-left: 33px
+            display: flex
+            align-items: center
+            flex-direction: column
+            justify-content: center
+            gap: 20px
+            padding: 9.75px 0px 10.25px 0px
+            @media (max-width: 1005px)
+                margin: 0
+            .culum_block
+                width: 300px
+                height: 167px
+                display: flex
+                align-items: start
+                flex-direction: column
+                justify-content: center
+                border-radius: 10px
+                padding: 21px
+                gap: 10px
+                @media (max-width: 1005px)
+                    border: 1px solid rgba(202, 204, 209, 0.20)
+                    background: #FAFAFC
+                &_img
+                    background: #45525B
+                    width: 48px
+                    height: 48px
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+                    justify-content: center
+                h3
+                    text-align: center
+                    color: #45525B
+                    font-size: 14px
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                    &:hover
+                        text-decoration: underline
+                        transition: 2s
+                p
+                    color: #6F7278
+                    line-height: 19.6px
+
+.banner_bcg
+    height: 600px
+    background-repeat: no-repeat
+    background-position: bottom center
+    background-image: url(../images/IMAGE_banner.webp)
+    background-size: cover
+    @media (max-width: 1005px)
+        height: 500px
+    @media (max-width: 750px)
+        height: 400px
+    @media (max-width: 600px)
+        height: 300px
+        background-size: cover center
+
+.store
+    padding: 100px 0px
+    background: #FAFAFC
+    @media (max-width: 1005px)
+        padding: 80px 0
+    @media (max-width: 750px)
+        padding: 40px 0
+    .title__wrap
+        background: none
+        @media (max-width: 1208px)
+            text-align: center
+        .title__desc
+            width: 574px
+            @media (max-width: 1208px)
+                margin-left: auto
+                margin-right: auto
+            @media (max-width: 800px)
+                width: 100%
+                margin: 11px 0 0 0
+    .cotalog_store
+        display: flex
+        padding: 30px 0px 26px 0px
+        gap: 22px 15.5px
+        flex-wrap: wrap
+        @media (max-width: 1208px)
+            justify-content: space-around
+        @media (max-width: 813px)
+            gap: 15px
+            padding: 40px 0 12px 0
+        .full_content_blok
+            width: 379px
+            .cotaloge_bcg
+                height: 267px
+                img
+                    display: block
+                    width: 100%
+                    height: 100%
+                    -o-object-fit: cover
+                    object-fit: cover
+            .cotaloge_information
+                background: #FFF
+                border-radius: 0px 0px 8px 8px
+                text-align: center
+                padding: 22px 31px
+                @media (max-width: 1023px)
+                    padding: 20px 25px
+                @media (max-width: 600px)
+                    padding: 20px 18px
+                .cotaloge_text
+                    color: #6F7278
+                    padding-top: 20px
+                    font-size: 12px
+                    line-height: 16.8px
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                .cotaloge_title
+                    color: #45525B
+                    font-size: 20px
+                    line-height: 28px
+                    &:hover
+                        text-decoration: underline
+                        transition: 2s
+                .content_inormation
+                    display: flex
+                    justify-content: space-between
+                    gap: 16px
+                    padding: 11px 0 0 0
+                    @media (max-width: 800px)
+                        gap: 3px
+                    .under_cotaloge
+                        display: flex
+                        align-items: center
+                        gap: 8px
+                        &_text
+                            color: #45525B
+                            font-size: 12px
+                            line-height: 16.8px
+                            &:hover
+                                text-decoration: underline
+                                transition: 2s
+
+.team
+    padding: 100px 0px
+    @media (max-width: 1005px)
+        padding: 80px 0
+    @media (max-width: 800px)
+        padding: 50px 0px
+    .title__wrap
+        @media (max-width: 1200px)
+            text-align: center
+            align-items: center
+            width: 100%
+    &_content
+        display: flex
+        align-items: center
+        justify-content: center
+        @media (max-width: 1200px)
+            flex-wrap: wrap
+        .title
+            width: 338px
+            @media (max-width: 1200px)
+                width: 100%
+        &__desc
+            width: 368px
+            font-size: 17px
+            @media (max-width: 1200px)
+                width: 100%
+
+        .under_store
+            justify-content: start
+            padding-top: 19px
+            &:hover
+                text-decoration: underline
+                transition: 2s
+            @media (max-width: 1200px)
+                justify-content: center
+
+    &_human
+        display: flex
+        flex-wrap: wrap
+        gap: 16px
+        margin: 0px 0px 0px 64px
+        padding: 6px 0px
+        @media (max-width: 1200px)
+            justify-content: center
+            padding: 40px 0 0 0
+            margin: 0
+        .info_human
+            display: flex
+            align-items: center
+            width: 300px
+            gap: 8px
+            @media (max-width: 1200px)
+                width: 280px
+            @media (max-width: 800px)
+                width: 230px
+            @media (max-width: 600px)
+                width: 150px
+            &_img
+                img
+                    height: 80px
+                    width: 80px
+                    border-radius: 40px
+                    border: 2px solid #CACCD1
+                    object-fit: cover
+                    @media (max-width: 800px)
+                        height: 70px
+                        width: 70px
+                    @media (max-width: 600px)
+                        height: 60px
+                        width: 60px
+            &_text
+                display: flex
+                flex-direction: column
+                justify-content: center
+                gap: 3px
+                h5
+                    color: #45525B
+                    font-size: 16px
+                    font-weight: 500
+                    line-height: 22.4px
+                    &:hover
+                        text-decoration: underline
+                        transition: 2s
+                    @media (max-width: 800px)
+                        font-size: 15px
+                        line-height: 15.4px
+                span
+                    color: #6F7278
+                    font-size: 12px
+                    line-height: 16.8px
+                    letter-spacing: 1px
+                    text-transform: uppercase
+                    @media (max-width: 800px)
+                        font-size: 10px
+                    @media (max-width: 600px)
+                        font-size: 8px
+                        line-height: 9.8px
+
+.newsroom
+    text-align: center
+    background: #FAFAFC
+    padding: 100px 0
+    @media (max-width: 1005px)
+        padding: 75px 0
+    @media (max-width: 800px)
+        padding: 50px 0
+    &__contents
+        display: flex
+        justify-content: center
+        margin: 20px 0px
+        padding: 0px 10px
+        gap: 18px
+        flex-wrap: wrap
+        @media (max-width: 750px)
+            padding: 0px
+    &__content
+        width: 370px
+        &__img
+            width: 100%
+            height: 211px
+            border-radius: 8px 8px 0 0
+            img
+                width: 100%
+                height: 100%
+                border-radius: 10px 10px 0 0
+        &__info
+            padding: 30px
+            text-align: left
+            border-radius: 0 0 10px 10px
+            background: #FFF
+            span
+                color: #FF8A63
+                font-size: 12px
+                line-height: 16.8px
+                letter-spacing: 2px
+                text-transform: uppercase
+
+            h4
+                color: #45525B
+                font-size: 16px
+                padding: 8px 0px 11px 0
+                font-weight: 500
+                line-height: 19.2px
+                &:hover
+                    text-decoration: underline
+                    transition: 2s
+            p
+                color: #6F7278
+                font-size: 13px
+                font-weight: 400
+                line-height: 19.6px
+                padding: 18px 0 0 0
+                @media (max-width: 750px)
+                    padding: 0
+            #new_text
+                padding: 0
+            #padding_p
+                padding: 18px 0 0 0
+
+.customers
+    padding: 100px 0px
+    @media (max-width: 1023px)
+        padding: 80px 0px
+    @media (max-width: 800px)
+        padding: 50px 0px
+    .title__wrap
+    @media (max-width: 1208px)
+        text-align: center
+    &__informations
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin: 20px 0 0 0
+        gap: 30px
+        @media (max-width: 1208px)
+            justify-content: center
+        @media (max-width: 800px)
+            margin: 37px 0 0 0
+            gap: 20px
+        @media (max-width: 600px)
+            gap: 10px
+    &__information
+        padding: 31px 30px
+        border-radius: 4px
+        border: 1px solid rgba(82, 80, 59, 0.10)
+        width: 569px
+        text-align: left
+        @media (max-width: 655px)
+            width: 100%
+            padding: 20px 17px
+        &__stars
+            display: flex
+            flex-wrap: wrap
+            height: 22px
+            padding: 2.5px 0px 2px 0px
+            gap: 2px
+        h3
+            color: #333
+            font-size: 24px
+            font-weight: 500
+            line-height: 28.8px
+            margin: 7px 0 0 0
+            &:hover
+                text-decoration: underline
+                transition: 2s
+            @media (max-width: 655px)
+                font-size: 18px
+        p
+            color: #333
+            font-size: 15px
+            line-height: 22.4px
+            margin: 11px 0 0 0
+            width: 509px
+            @media (max-width: 655px)
+                font-size: 14px
+                line-height: 20px
+                width: 100%
+        &__undertext
+            border-left: #FF8A63 solid 2px
+            padding: 4px 10px
+            margin: 19px 0 0 0
+            span
+                color: #45525B
+                font-size: 16px
+                line-height: 16px
+                &:hover
+                    text-decoration: underline
+                    transition: 2s
+
+.contact
+    padding: 100px 0px
+    background: #45525B
+    @media (max-width: 1023px)
+        padding: 80px 0px
+    @media (max-width: 800px)
+        padding: 50px 0px
+    .title
+        color: #fff
+        &__wrap
+            text-align: center
+        &__desc
+            color: #FAFAFC
+            width: 574px
+            font-size: 18px
+            line-height: 24.6px
+            margin-left: auto
+            margin-right: auto
+            @media (max-width: 700px)
+                width: 100%
+                margin-left: 0
+                margin-right: 0
+
+.footer
+    background: #292C32
+    padding: 100px 0
+    @media (max-width: 1023px)
+        padding: 80px 0px
+    @media (max-width: 800px)
+        padding: 50px 0px
+    &__img
+        display: flex
+        justify-content: center
+    &__contents
+        display: flex
+        flex-wrap: wrap
+        gap: 16px
+        justify-content: center
+        margin: 76px 0 0 0
+        @media (max-width: 1208px)
+            width: 100%
+            justify-content: space-around
+            margin: 50px 0 0 0
+        @media (max-width: 735px)
+            margin: 30px 0 0 0
+        @media (max-width: 500px)
+            gap: 25px
+    &__content
+        width: 220px
+        @media (max-width: 1208px)
+            text-align: center
+        p
+            color: #FFF
+            font-size: 16px
+            line-height: 22.4px
+            margin: 9px 0 0 0
+        &__under
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            margin: 27px 0 0 0
+            @media (max-width: 700px)
+                margin: 18px 0 0 0
+            @media (max-width: 700px)
+                flex-direction: column-reverse
+                justify-content: center
+                align-items: center
+            span
+                color: #FFF
+                font-size: 16px
+                line-height: 22.4px
+                @media (max-width: 700px)
+                    margin: 25px 0 0 0
+                    text-align: center
+            &__right
+                display: flex
+                gap: 20px
+    #footer__content
+        display: flex
+        flex-direction: column
+        width: 457px
+        @media (max-width: 1200px)
+            justify-content: center
+            margin: auto

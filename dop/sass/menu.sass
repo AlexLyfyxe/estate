@@ -1,0 +1,126 @@
+// .menu
+//     height: 66px
+//     &__content
+//         display: flex
+//         justify-content: space-between
+//         padding: 14px 0 
+// 	    align-items: center 
+// 	    background: red
+//         &__estate
+//             padding: 0 0 0 5px
+//         #toggler
+//             display: none
+//         label
+//             display: none
+//             &__info
+//                 display: flex
+//                 gap: 30px
+//                 padding: 11px 10px
+//                 @media (max-width: 650px)
+//                     width: 100%
+//                     max-height: 0
+//                     overflow: hidden
+//                 .list 
+//                     display: flex 
+//                     list-style: none 
+//                     gap: 25px 
+//                     height: 400px
+//                     @media (max-width: 650px)
+//                     flex-direction: column
+//                         align-items: center
+//                         padding: 20px
+//                     a
+//                         color: #444
+//                         font-size: 15px
+//                         line-height: 16px
+//                         text-decoration: none
+
+.menu
+    height: 66px
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 14px 0
+        @media (max-width: 650px)
+            width: 100%
+            overflow: hidden
+            height: 66px
+        #toggler
+            position: relative
+            border: none
+            width: 15px
+        .burger
+            position: absolute
+            background: linear-gradient( rgba(193, 219, 255, 0.99) 100%)
+            width: 100%
+            z-index: 100
+            height: 450px
+            top: 0px
+            left: 0px
+            display: flex
+            align-items: center
+            justify-content: space-around
+            flex-direction: column
+            display: none
+            padding: 10px 0 0 0
+            overflow: hidden
+            transition: height 0.5s ease
+            @media (max-width: 700px)
+                display: none
+            &__content
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+            .block_non
+                display: flex
+                justify-content: flex-end
+                padding: 0 20px 0 0
+                #non_toggler
+                    border: none
+                    font-size: 75px
+                    color: #444
+                    background: none
+            &_list
+            li
+                list-style-type: none
+                padding: 20px
+                a
+                    color: #444
+                    font-size: 35px
+                    line-height: 20px
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+                        transition: 2s
+        &__estate
+            padding: 0 0 0 5px
+        &__info
+            display: flex
+            gap: 30px
+            padding: 11px 10px
+            @media (max-width: 650px)
+                display: none
+            .list
+                list-style: none
+                display: flex
+                gap: 30px
+                @media (max-width: 650px)
+                    flex-direction: column
+                    align-items: center
+                    gap: 10px
+                    padding: 20px
+                    display: none
+                a
+                    color: #444
+                    font-size: 15px
+                    line-height: 16px
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+                        transition: 2s
+    #toggler
+        display: none
+        @media (max-width: 650px)
+            display: inline-flex
